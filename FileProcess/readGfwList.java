@@ -46,7 +46,10 @@ public class readGfwList {
     public static void main(final String[] args) {
         final readGfwList read = new readGfwList("dnsmasq_gfwlist_ipset.conf");
         List<String> gfwList = read.getFileData();
-        processGfwData processGfw = new processGfwData(gfwList);
-        processGfw.replace("127.0.10.1", 5353);
+
+        processGfwData processGfw = new processGfwData(gfwList, "test.conf");
+        processGfw.replace("127.0.110.1", 5353);
+        processGfw.addOne("domain", "127.110.1", 1234);
+        processGfw.deleteOne("030buy.com");
     }
 }
