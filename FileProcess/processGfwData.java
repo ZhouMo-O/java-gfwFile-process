@@ -1,10 +1,6 @@
 package FileProcess;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +11,7 @@ import java.util.regex.Pattern;
 public class processGfwData {
     private List<String> gfwList = new ArrayList<>();
     private List<String> newGfwList = new ArrayList<>();
-    private byte[] buffer = new byte[1000];
     private String newGfwData;
-
     private Logger logger = Logger.getGlobal();
 
     public processGfwData(List<String> gfwList) {
