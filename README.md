@@ -1,2 +1,7 @@
 # java-gfwFile-process
-java编写的gfw文件处理程序
+
+java 编写的 gfw 文件处理程序
+主要功能有：  
+批量替换转发 ip 和端口  
+删除一条规则  
+新增一条规则
